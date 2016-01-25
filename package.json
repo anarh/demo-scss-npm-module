@@ -1,0 +1,45 @@
+{
+  "name": "demo-scss-npm-module",
+  "version": "0.0.0",
+  "description": "A demo of a sass/scss only npm module",
+  "bugs": "https://github.com/anarh/demo-scss-npm-module/issues",
+  "author": "Emmanuel (Manny) Narh <eanarh@yahoo.com>",
+  "license": "MIT",
+  "main": "index.scss",
+  "files": [
+    "index.scss",
+    "src",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anarh/demo-scss-npm-module"
+  },
+  "keywords": [
+    "demo-scss-npm-module",
+    "sass",
+    "scss",
+    "scss npm module"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tape": "^4.0.1",
+    "tap-spec": "^4.0.2",
+    "gaze-cli": "^0.2.0",
+    "semistandard": "^7.0.5",
+    "node-sass": "^3.4.2",
+    "node-sass-import": "^0.0.6",
+    "sass-lint": "^1.4.0"
+  },
+  "scripts": {
+    "prepublish": "npm run lint && npm test",
+    
+    "lint": "semistandard && npm run lint:css",
+    "test": "node test/index.js | tap-spec",
+    "test:watch": "gaze 'npm test' 'test/**/*.js'",
+    "start": "npm run test:watch",
+    "build:css": "node-sass index.scss dist/index.css --importer node_modules/node-sass-import",
+    "lint:css": "sass-lint 'src/**/*.scss' -v"
+  }
+}
