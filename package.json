@@ -1,6 +1,6 @@
 {
   "name": "demo-scss-npm-module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A demo of a sass/scss only npm module",
   "bugs": "https://github.com/anarh/demo-scss-npm-module/issues",
   "author": "Emmanuel (Manny) Narh <eanarh@yahoo.com>",
@@ -21,8 +21,7 @@
     "scss",
     "scss npm module"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "tape": "^4.0.1",
     "tap-spec": "^4.0.2",
@@ -34,7 +33,6 @@
   },
   "scripts": {
     "prepublish": "npm run lint && npm test",
-    
     "lint": "semistandard && npm run lint:css",
     "test": "node test/index.js | tap-spec",
     "test:watch": "gaze 'npm test' 'test/**/*.js'",
