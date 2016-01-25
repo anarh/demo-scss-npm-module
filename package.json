@@ -1,6 +1,6 @@
 {
   "name": "demo-scss-npm-module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A demo of a sass/scss only npm module",
   "bugs": "https://github.com/anarh/demo-scss-npm-module/issues",
   "author": "Emmanuel (Manny) Narh <eanarh@yahoo.com>",
