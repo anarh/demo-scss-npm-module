@@ -16,8 +16,8 @@ This package can be imported/required like any npm package so long as the final 
 ```scss
 @import demo-scss-npm-module
 
-.hello-world {
-  width: 100px;
+.my-world {
+  color: $main-color;
 }
 ```
 
