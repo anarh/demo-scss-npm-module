@@ -22,6 +22,7 @@ This package can be imported/required like any npm package so long as the final 
 ```
 
 To build the css output as a standalone
+
 1. Clone the [github repository](https://github.com/anarh/demo-scss-npm-module) and
 2. `npm install`
 3. `npm run build:css`
